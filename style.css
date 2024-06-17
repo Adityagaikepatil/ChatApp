@@ -1,0 +1,164 @@
+.logo {
+
+
+    width: 70px;
+    height: 70px;
+}
+
+body {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(236, 149, 190));
+    min-height: 100vh;
+
+}
+
+.navbar {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 10px;
+    margin: auto;
+
+
+}
+
+.heading {
+    font-size: 38px;
+    margin: 0 25px;
+    color: rgb(162, 30, 56);
+    font-weight: 800;
+}
+
+.container {
+    max-width: 955px;
+    margin: auto;
+    border: 2px solid rgb(209, 91, 115);
+    border-radius: 12px;
+    height: 60vh;
+    padding: 20px;
+    overflow-y: auto;
+    margin-bottom: 24px;
+}
+
+.message {
+    background-color: rgb(255, 139, 174);
+    display: inline-block;
+    /* Adjust width to fit content */
+    max-width: 100%;
+    font-weight: 600;
+    width: 30%;
+    padding: 7px;
+    margin: 12px 1px;
+    border: 2px solid salmon;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+#send-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 1085px;
+    width: 100%;
+
+
+}
+
+#messageInp {
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 32px;
+}
+
+.btn {
+    width: 8%;
+    height: 36px;
+    border: 2px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 580px) {
+    .message {
+        width: 44%;
+        margin: 10px auto;
+    }
+
+    /* .message {
+        background-color: rgb(191, 50, 163);
+        font-weight: 500;
+        width: 24%;
+        padding: 10px;
+        margin: 17px 1px;
+        border: 2px solid salmon;
+        border-radius: 10px;
+    } */
+
+    #messageInp {
+        width: 86%;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        width: 10%;
+
+        >span {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .message {
+        width: 54%;
+        margin: 10px auto;
+    }
+
+
+    #messageInp {
+        width: 84%;
+        margin-bottom: 12px;
+    }
+
+    .btn {
+        width: 12%;
+
+        >span {
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .message {
+        width: 64%;
+        margin: 10px auto;
+    }
+
+
+    #messageInp {
+        width: 80%;
+        margin-bottom: 12px;
+    }
+
+    .btn {
+        width: 14%;
+
+        >span {
+            font-size: 10px;
+        }
+    }
+}
